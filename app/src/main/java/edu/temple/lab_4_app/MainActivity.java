@@ -32,15 +32,11 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 adapterView.setBackgroundColor(Color.parseColor(adapterView.getItemAtPosition(i).toString()));
-                //view.setBackgroundColor(Color.WHITE);
+
                 String chosenColor = adapterView.getItemAtPosition(i).toString();
-
-                //View myLayout = findViewById(R.id.mainLayout);
-                //myLayout.setBackgroundColor(Color.parseColor(chosenColor));
-
-                // Start NewActivity.class
                 Intent myIntent = new Intent(MainActivity.this, CanvasActivity.class);
                 myIntent.putExtra("Color",chosenColor);
+
                 startActivity(myIntent);
             }
 

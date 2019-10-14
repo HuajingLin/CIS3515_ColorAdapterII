@@ -1,6 +1,7 @@
 package edu.temple.lab_4_app;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,9 +41,14 @@ public class ColorAdapter extends BaseAdapter {
         else
             textView = new TextView(context);
 
-        String colorValue = colors[i];
-        textView.setText(colorValue);
-        textView.setBackgroundColor(Color.parseColor(colorValue));
+        //String colorValue = colors[i];
+        //textView.setText(colorValue);
+
+        Resources res = viewGroup.getResources();
+        String[] ca = res.getStringArray(R.array.colors);
+        textView.setText(ca[i]);
+
+        textView.setBackgroundColor(Color.parseColor(colors[i]));
         textView.setTextSize(22);
         textView.setPadding(5,5,0,0);
 

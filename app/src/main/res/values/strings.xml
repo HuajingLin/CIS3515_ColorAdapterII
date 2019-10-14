@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">Lab_4_App</string>
+    <string name="app_name">Lab_5_App</string>
+    <string name="activity_palette">Palette Activity</string>
+    <string name="activity_canvas">Canvas Activity</string>
+    <string-array name="colors">
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Cyan</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Magenta</item>
+        <item>Red</item>
+        <item>Purple</item>
+        <item>Olive</item>
+        <item>Navy</item>
+        <item>Teal</item>
+    </string-array>
 </resources>

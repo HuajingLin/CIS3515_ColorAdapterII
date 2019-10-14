@@ -18,10 +18,10 @@ public class CanvasActivity extends AppCompatActivity {
         Intent myIntent = getIntent();
         String strColor = myIntent.getStringExtra("Color");
 
-        String tips = "You select " + strColor + " color.";
-        Toast toast=Toast.makeText(getApplicationContext(),tips,Toast.LENGTH_LONG);
-        toast.setMargin(50,50);
-        toast.show();
+        //String tips = "You select " + strColor + " color.";
+        //Toast toast=Toast.makeText(getApplicationContext(),tips,Toast.LENGTH_LONG);
+        //toast.setMargin(50,50);
+        //toast.show();
 
         View myLayout = findViewById(R.id.canvasLayout);
         myLayout.setBackgroundColor(Color.parseColor(strColor));
